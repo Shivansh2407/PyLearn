@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
+    <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
+
+    <title>Python Learning</title>
+
+    <!-- normalize core CSS -->
+    <link href="../static/css/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/carousel.css" rel="stylesheet">
+    <link href="../static/bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="../static/bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Fonts - Change if needed -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Menu shrinking -->
+    <script type="text/javascript" src="../static/js/menu.js"></script>
+
+    <!-- Main styles of this template -->
+    <link href="../static/css/style.min.css?v=1.0.0" rel="stylesheet">
+
+    <!-- Custom CSS. Input here your changes -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+<section class="mbr-section article content1 cid-rt7t4uuFH3" id="content1-1e">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+
+</div><div>A <strong>character </strong>is a symbol which lies in the ASCII code. For example, the English language has 26 characters.
+</div><div>A <strong>strings </strong>are a sequence of characters. These characters are all stored in the memory together and collectively make some sense.
+</div><div>Every character has a unique ASCII code that is used to store and retrieve it by the computer as it only understands the language of 1s and 0s.</div><div><br></div><div>
+</div><div><strong>How to create a string in Python?
+</strong></div><div>Strings can be created by enclosing characters inside a single quote or double quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.</div><div><strong>Example-</strong></div><div>
+</div><div>my_string = 'Hello'
+</div><div>print(my_string)
+</div><div>my_string = "Hello"
+</div><div>print(my_string)
+</div><div>my_string = '''Hello'''
+</div><div>print(my_string)
+</div><div># triple quotes string can extend multiple lines
+</div><div>my_string = """Hello, welcome to
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the world of Python"""
+</div><div>print(my_string)</div><div><br></div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div><strong>Output:</strong></div><div>Hello
+</div><div>Hello
+</div><div>Hello
+</div><div>Hello, welcome to
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the world of Python</div><div><br></div><div><br></div><div>
+</div><div><strong>Accessing characters in string:
+</strong></div><div>We can access individual characters using indexing and a range of characters using slicing. Index starts from 0. Trying to access a character out of index range will raise an IndexError. The index must be an integer. We can't use float or other types, this will result into TypeError.
+</div><div>Python allows negative indexing for its sequences.
+</div><div>The index of -1 refers to the last item, -2 to the second last item and so on. We can access a range of items in a string by using the slicing operator (colon).</div><div><br></div><div><strong>Example:</strong></div><div>
+</div><div>string = ‘Hello World’
+</div><div>print('string= ', string)
+</div><div>#first character
+</div><div>print('string[0] = ', string[0])
+</div><div>#last character
+</div><div>print('string[-1] = ', string[-1])
+</div><div>#slicing 2nd to 5th character
+</div><div>print('string[1:5] = ', string[1:5])
+</div><div>#slicing 6th to 2nd last character
+</div><div>print('string[5:-2] = ', string[5:-2])
+</div><div>
+</div><div>
+</div><div>If we try to access index out of the range or use decimal number, we will get errors.
+</div><div># index must be in range
+</div><div>&gt;&gt;&gt; string[20]  
+</div><div>...
+</div><div>IndexError: string index out of range
+</div><div>
+</div><div># index must be an integer
+</div><div>&gt;&gt;&gt; string[1.5] 
+</div><div>...
+</div><div>TypeError: string indices must be integers</div><div><br></div><div><br></div><div><strong>Updating and deleting in string:</strong></div><div><span style="font-size: 1rem;">Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.</span></div><div><strong><span style="font-size: 1rem;"><br></span>Example(in python shell):</strong></div><div>&gt;&gt;&gt;string = 'Hello World'
+</div><div>&gt;&gt;&gt; string[5] = 'a'
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#12&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; string[5]='a'
+</div><div>TypeError: 'str' object does not support item assignment
+</div><div>&gt;&gt;&gt; string = 'Python'
+</div><div>&gt;&gt;&gt; string
+</div><div>'Python'</div><div><br></div><div>
+</div><div>We cannot delete or remove characters from a string. But deleting the string entirely is possible using the keyword <strong>del</strong>.</div><div><strong><br></strong></div><div><strong>Example:</strong></div><div>
+</div><div>&gt;&gt;&gt; del string[0]
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#13&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; del string[0]
+</div><div>TypeError: 'str' object doesn't support item deletion
+</div><div>&gt;&gt;&gt; del string
+</div><div>&gt;&gt;&gt; string
+</div><div>...
+</div><div>NameError: name 'string' is not defined
+</div><div><br></div><div><strong>Note:</strong>The NameError occurs because the entire string has been deleted and cannot be accessed in the program.</div><div><br></div><div><br></div><div>
+</div><div><strong>Python String Operations</strong></div><div><span style="font-size: 1rem;">There are many operations that can be performed with string which makes it one of the most used datatypes in Python.</span></div><div><br></div><div><strong>Concatenation of Two or More Strings
+</strong></div><div>Joining of two or more strings into a single one is called concatenation.
+</div><div>The <strong>+</strong> operator is used for concatenation in python. Simply writing two string literals together also concatenates them.
+</div><div>The <strong>*</strong> operator can be used to repeat the string for a given number of times.
+</div><div><br></div><div><strong>Example:</strong></div><div>str1 = 'Hello'
+</div><div>str2 ='World!'
+</div><div># using +
+</div><div>print('str1 + str2 = ', str1 + str2)
+</div><div># using *
+</div><div>print('str1 * 3 =', str1 * 3)</div><div><br></div><div><strong>Output:</strong></div><div>str1 + str2 = HelloWorld!</div><div>str1 * 3 = HelloHelloHello</div><div><br></div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>Writing two string literals together also concatenates them like + operator.
+</div><div>If we want to concatenate strings in different lines, we need to use parentheses.</div><div><br></div><div>
+</div><div><strong>Example:</strong></div><div>&gt;&gt;&gt; # two string literals together
+</div><div>&gt;&gt;&gt; 'Hello ''World!'
+</div><div>'Hello World!'
+</div><div>
+</div><div>&gt;&gt;&gt; # using parentheses
+</div><div>&gt;&gt;&gt; s = ('Hello '
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'World')
+</div><div>&gt;&gt;&gt; s
+</div><div>'Hello World'</div><div><br></div><div><br></div><div><strong>Iterating Through String
+</strong></div><div>We can use FOR loop to iterate through the elements of a string just like the elements of a list.</div><div>We mostly use the len(str)&nbsp;keyword to know the length of the string.</div><div><strong><br></strong></div><div><strong>Example:</strong></div><div>Here is a simple program to count the number of times 'a' occurs in the string.</div><div><br></div><div>total=0</div><div>
+</div><div>string='Keep Calm and Learn to Code'</div><div>length=len(string)</div><div>for i in range(0,length):</div><div>&nbsp; &nbsp; if string[ i ]=='a':</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; total+=1</div><div>print('The number of times "a" occurs is:' , total)</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div><strong>Output:</strong></div><div>The number of times "a" occurs is: 3</div><div><br></div><div><strong><br></strong></div><div><strong>String Membership Test
+</strong></div><div>We can test if a sub string exists within a string or not, using the keyword in.</div><div>
+</div><div>It can also help us to iterate through a given string.</div><div>&gt;&gt;&gt; 'a' in 'program'
+</div><div>True
+</div><div>&gt;&gt;&gt; 'at' not in 'battle'
+</div><div>False</div><div><br></div><div>We can use in keyword to access each element of the string sequentially when used with for loop. The same above code can also be written using in keyword.</div><div><strong><br></strong></div><div><strong>Example:&nbsp;</strong></div><div>total=0
+</div><div>string='Keep Calm and Learn to Code'
+</div><div>for i in string:
+</div><div>&nbsp; &nbsp; if i=='a':
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; total+=1
+</div><div>print('The number of times "a" occurs is:' , total)</div><div>
+</div><div><br></div><div>Output:</div><div>The number of times "a" occurs is: 3</div><div><br></div><div><strong>Note:</strong>The program becomes much more simpler and lesser number of variables need to be used making the code more efficient.</div><div><br></div><div><strong>Built-in functions to Work with Python</strong></div><div><strong><br></strong></div><div><strong>
+</strong></div><div>Various built-in functions that work with sequence, works with string as well.
+</div><div>Some of the commonly used ones are <strong>enumerate()</strong> and <strong>len()</strong>. </div><div><br></div><div>The enumerate() function returns an enumerate object. It contains the index and value of all the items in the string as pairs. This can be useful for iteration.
+</div><div>Similarly, len() returns the length (number of characters) of the string<span style="font-size: 1rem;">.</span></div><div><span style="font-size: 1rem;"><br></span></div><div><span style="font-size: 1rem;"><strong>Example:</strong></span></div><div>str = 'cold'
+</div><div># enumerate()
+</div><div>list_enumerate = list(enumerate(str))
+</div><div>print('list(enumerate(str) = ', list_enumerate)
+</div><div>#character count
+</div><div>print('len(str) = ', len(str))</div><div><strong><br></strong></div><div>
+</div><div>
+</div><div><strong>Output:</strong></div><div>list(enumerate(str) =  [(0, 'c'), (1, 'o'), (2, 'l'), (3, 'd')]
+</div><div>len(str) =  4</div><div>
+</div><div><br></div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div><br></div><p></p></div>
+        </div>
+    </div>
+</section>
+

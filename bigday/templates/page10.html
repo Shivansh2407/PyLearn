@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
+    <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
+
+    <title>Python Learning</title>
+
+    <!-- normalize core CSS -->
+    <link href="../static/css/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/carousel.css" rel="stylesheet">
+    <link href="../static/bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="../static/bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Fonts - Change if needed -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Menu shrinking -->
+    <script type="text/javascript" src="../static/js/menu.js"></script>
+
+    <!-- Main styles of this template -->
+    <link href="../static/css/style.min.css?v=1.0.0" rel="stylesheet">
+
+    <!-- Custom CSS. Input here your changes -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+  <section class="mbr-section article content1 cid-rt7svfQU6Q" id="content1-18">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+</div><div>In the dictionary every key is assigned values using semi-colon and two different keys are separated by comma.
+</div><div><strong><br></strong></div><div><strong>Example-
+</strong></div><div>dict = {'Python': 10, 'CPP': 7, 'Java': 9}
+</div><div>&nbsp;An empty dictionary is declared using {}.
+</div><div><br></div><div><strong>Accessing Values in Dictionary
+</strong></div><div>To access dictionary elements, you can use the familiar square brackets along with the key to obtain its value just like the lists. </div><div><br></div><div><strong>Example −
+</strong></div><div>dict = {'Python': 10, 'CPP': 7, 'Java': 9}
+</div><div>print (‘dict['Python']: ‘, dict['Python'])
+</div><div>print (‘dict['CPP']: ‘, dict['CPP'])
+</div><div><br></div><div><strong>Output:-
+</strong></div><div>dict['Python']:  10
+</div><div>dict['CPP']:  7
+</div><div>print(dict['HTML'])
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#1&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; print(dict['HTML'])
+</div><div>KeyError: 'HTML'</div><div><br></div><div>
+</div><div><strong>Updating Dictionary
+</strong></div><div>You can modify the existing dictionary by using the keys and assigning them values. 
+</div><div>dict = {'Python': 10, 'CPP': 7, 'Java': 9}
+</div><div>dict['CPP'] = 8; # update existing entry
+</div><div>Even if the key does not exist in the dictionary we can add it directly by assigning the value and writing the key directly. </div><div><br></div><div><strong>Example-</strong></div><div>dict['HTML'] = 8; # Add new entry
+</div><div>print (‘dict:’,dict)
+</div><div><strong><br></strong></div><div><strong>Output:</strong></div><div>{'Python': 10, 'CPP': 8, 'Java': 9, 'HTML': 8}</div><div><br></div><div>
+</div><div>
+</div><div><strong>Delete Dictionary Elements
+</strong></div><div>You can either remove individual dictionary elements or clear the entire contents of a dictionary. You can also delete entire dictionary in a single operation.
+</div><div>To explicitly remove an entire dictionary, just use the <strong>del </strong>statement. </div><div><br></div><div><strong>Example −
+</strong></div><div>dict = {'Python': 10, 'CPP': 8, 'Java': 9, 'HTML': 8}
+</div><div>del dict['Python’]; # remove entry with key 'Name'
+</div><div>print(dict)
+</div><div>dict.clear();     # remove all entries in dict
+</div><div>print(dict)
+</div><div><strong><br></strong></div><div><strong>Output:
+</strong></div><div>{'CPP': 7, 'Java': 9, 'HTML': 8}
+</div><div>{}</div><div><br></div><div>
+</div><div><strong>Properties of Dictionary Keys
+</strong></div><div>There are no restrictions on the values that we assign to the keys. But the keys that we add must follow certain rules.</div><div><br></div><div>
+</div><div><strong>There are two important points to remember about dictionary keys −
+</strong></div><div><span style="font-size: 1rem;"><strong>(a)</strong> Duplication of keys is not allowed. In this case, the last assignment of that key is displayed.</span><br></div><div>dict = {'HTML': 7, 'Java': 9, 'HTML': 8}
+</div><div>print "dict['HTML']: ", dict['HTML']
+</div><div>Output:
+</div><div>dict['HTML']:  8
+</div><div><strong>(b)</strong> The keys must be immutable. That means, the keys can be strings, numbers or tuples but they cannot be lists. As lists are mutable.
+</div><div>dict = {['CPP']: 7, 'Java': 9, 'HTML': 8}
+</div><div>Output:
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#9&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; dict = {['CPP']: 7, 'Java': 9, 'HTML': 8}
+</div><div>TypeError: unhashable type: 'list'</div><div><br></div><div>
+</div><div><strong>Built-in Dictionary Functions &amp; Methods
+</strong></div><div>Python includes the following dictionary functions −
+</div><div><br></div><div>1 . <strong>Compare&nbsp;</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmp(dict1, dict2)
+</div><div>Compares elements of both dict.
+</div><div>2 . <strong>Length</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; len(dict)
+</div><div>Gives the total length of the dictionary. This would be equal to the number of items in the dictionary.
+</div><div>3 . <strong>Dict2Str&nbsp;</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; str(dict)
+</div><div>Produces a printable string representation of a dictionary
+</div><div>4 <strong>TypeOfVariable </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;type(variable)
+</div><div>Returns the type of the passed variable. If passed variable is dictionary, then it would return a dictionary type.</div><div><br></div><div>
+</div><div><strong>Python includes following dictionary methods −
+</strong></div><div><br></div><div>1 . Clear &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>dict.clear()
+</strong></div><div>Removes all elements of dictionary dict
+</div><div><br></div><div>2 . Copy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong> dict.copy()
+</strong></div><div>Returns a shallow copy of dictionary dict
+</div><div><br></div><div>3 . Dict2List &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>&nbsp; &nbsp;dict.fromkeys()
+</strong></div><div>Create a new dictionary with keys from seq and values set to value.
+</div><div><br></div><div>4 . GetKey's Value &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong> dict.get(key, default=None)
+</strong></div><div>Returns the value of the key if True ,else returns default value</div><div><br></div><div>5 . PresenceOfKey &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong> &nbsp;dict.has_key(key)
+</strong></div><div>Returns true if key in dictionary dict, false otherwise
+</div><div><br></div><div>6 .Items &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong> &nbsp; dict.items()
+</strong></div><div>Returns a list of dict's (key, value) tuple pairs
+</div><div><br></div><div>7 . Keys &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>dict.keys()
+</strong></div><div>Returns list of dictionary dict's keys
+</div><div><br></div><div>8 .SetDefault&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;dict.setdefault(key, default=None)
+</strong></div><div>Similar to get(), but will set dict[key]=default if key is not already in dict
+</div><div><br></div><div>9 . Update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> &nbsp; &nbsp;dict.update(dict2)
+</strong></div><div>Adds dictionary dict2's key-values pairs to dict
+</div><div><br></div><div>10 . Values &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong> &nbsp; &nbsp;dict.values()
+</strong></div><div>Returns list of dictionary dict's values</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div>
+</div><div><br></div><p></p></div>
+        </div>
+    </div>
+</section>

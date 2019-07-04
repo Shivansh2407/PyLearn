@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
+    <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
+
+    <title>Python Learning</title>
+
+    <!-- normalize core CSS -->
+    <link href="../static/css/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/carousel.css" rel="stylesheet">
+    <link href="../static/bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="../static/bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Fonts - Change if needed -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Menu shrinking -->
+    <script type="text/javascript" src="../static/js/menu.js"></script>
+
+    <!-- Main styles of this template -->
+    <link href="../static/css/style.min.css?v=1.0.0" rel="stylesheet">
+
+    <!-- Custom CSS. Input here your changes -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+  <section class="mbr-section article content1 cid-rt7qYztsex" id="content1-w">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text "><strong> Exceptions handling:-
+</strong></div><div><br></div><div><strong>What are exceptions in Python?
+</strong></div><div>Exceptions are errors that are detected during execution of the code. They are not always fatal for the program. Exceptions can be handled in python for proper execution of the program and get the expected output.</div><div><br></div><div>
+</div><div>Example: ZeroDivideError , NameError, TypeError etc. The name of the error is displayed in the message followed by the reason for its arrival.
+</div><div>&gt;&gt;&gt; print(10/0)
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#10&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; print(10/0)
+</div><div>ZeroDivisionError: division by zero
+</div><div>&gt;&gt;&gt; print(place)
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#11&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; print(place)
+</div><div>NameError: name 'place' is not defined
+</div><div>&gt;&gt;&gt; print('India'+1)
+</div><div>Traceback (most recent call last):
+</div><div>&nbsp; File "&lt;pyshell#12&gt;", line 1, in &lt;module&gt;
+</div><div>&nbsp; &nbsp; print('India'+1)
+</div><div>TypeError: must be str, not int</div><div><br></div><div> 
+</div><div><br></div><div><strong>Catching Exceptions in Python</strong></div><div><strong><br></strong></div><div><span style="font-size: 1rem;">Once an error occurs you need to write a block of code for catching and handling it. So, that the program doesn’t crash and gives us the required output.</span><br></div><div>In python we have a special keyword for catching exceptions if they arise in the ‘try block’.
+</div><div>We write the code that we suspect could result into error in the ‘try block’.  
+</div><div>The ‘except block’ is called when the ‘try block’ detects an error. The ‘except block’ then handles the error and it is unto us what we want to do in the ‘except-block’.</div><div><strong><br></strong></div><div><strong>Example:</strong></div><div>
+</div><div>import sys
+</div><div>list=[100,200,300]
+</div><div>no=[0,1,2]
+</div><div>l=len(list)
+</div><div>for i in range (0,l):
+</div><div>&nbsp; &nbsp; try:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; values=(list[i])/no[i]
+</div><div>&nbsp; &nbsp; except:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; values=(list[i])/(no[i]+1)
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; print('The item was divided by zero')
+</div><div>
+</div><div>&nbsp; &nbsp; print('values=',values)</div><div><br></div><div>
+</div><div><strong>Output:-
+</strong></div><div>The item was divided by zero
+</div><div>values= 100.0
+</div><div>values= 200.0
+</div><div>values= 150.0</div><div><br></div><div>
+</div><div>In this program we are basically trying to find the result of division of two list with their consecutive elements.
+</div><div>Hence, when we try to divide the code with the first element of ‘no’ list which is 0 the try block catches the ZeroDivideError and calls the except block to handle it. In the except block we raise the value of it by 1 and the program executes without crashing.</div><div><br></div><div><strong><br></strong></div><div>
+</div><div><strong>Catching Specific Exceptions in Python
+</strong></div><div>In the above example, we did not mention any specific exception in the except clause.
+</div><div>We should always write different except blocks for different exceptions because all the exceptions have different causes of arousal and must be handled differently.
+</div><div>A try clause can have any number of except clause to handle them differently but only one will be executed in case an exception occurs.
+</div><div>We can use a tuple of values to specify multiple exceptions in an except clause. Here is an example pseudo code.</div><div><strong><br></strong></div><div><strong>Example:</strong></div><div>
+</div><div>try:
+</div><div>&nbsp; &nbsp;# do something
+</div><div>
+</div><div>except ValueError:
+</div><div>&nbsp; &nbsp;# handle ValueError exception
+</div><div>
+</div><div>except (TypeError, ZeroDivisionError):
+</div><div>&nbsp; &nbsp;# handle multiple exceptions
+</div><div>&nbsp; &nbsp;# TypeError and ZeroDivisionError
+</div><div>except:
+</div><div>&nbsp; &nbsp;# handle all other exceptions
+</div><div>
+</div><div>
+</div><div><br></div><div><br></div><div><br></div><div><strong>Raising Exceptions
+</strong></div><div>If we want to raise an exception or call the except block in the try block, we can use raise keyword.
+</div><div>Raise calls the except block . We can also pass a value with the raise function which can later be used in the except block.</div><div><br></div><div>
+</div><div><strong>Example: 
+</strong></div><div>list=[10,20,30]
+</div><div>try:
+</div><div>&nbsp; &nbsp; a=int(input('Enter the number to divide all elements of the list:-'))
+</div><div>&nbsp; &nbsp; if int(a)==0:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; raise ZeroDivisionError('The number entered was zero')
+</div><div>&nbsp; &nbsp; elif int(a)&lt;0:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; raise ValueError('The number enetered was less than zero')
+</div><div>&nbsp; &nbsp; else:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; for i in list:
+</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print('The elements are:-',i/a)
+</div><div>except ZeroDivisionError as o:
+</div><div>&nbsp; &nbsp; print(o)
+</div><div>
+</div><div>except ValueError as o:
+</div><div>&nbsp; &nbsp; print(o)</div><div><br></div><div><br></div><div>
+</div><div>
+</div><div><strong>Output:
+</strong></div><div>========================= RESTART: C:\python\eg1.py =========================
+</div><div>Enter the number to divide all elements of the list:-0
+</div><div>The number entered was zero
+</div><div>&gt;&gt;&gt; 
+</div><div>========================= RESTART: C:\python\eg1.py =========================
+</div><div>Enter the number to divide all elements of the list:--1
+</div><div>The number enetered was less than zero
+</div><div>&gt;&gt;&gt; 
+</div><div>========================= RESTART: C:\python\eg1.py =========================
+</div><div>Enter the number to divide all elements of the list:-2
+</div><div>The elements are:- 5.0
+</div><div>The elements are:- 10.0
+</div><div>The elements are:- 15.0________________________________________</div><div><br></div><div><br></div><div>
+</div><div>
+</div><div>Video link for errors and exceptions:- <a href="https://www.youtube.com/watch?v=O2Nk3JFZE58">https://www.youtube.com/watch?v=O2Nk3JFZE58</a>
+</div><div>For in- detail learning of this topic:- <a href="https://www.youtube.com/watch?v=NMTEjQ8-AJM">https://www.youtube.com/watch?v=NMTEjQ8-AJM</a>
+</div><div>
+</div><div>
+</div><div>
+</div><div><br></div><p></p></div>
+        </div>
+    </div>
+</section>
