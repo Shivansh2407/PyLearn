@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['www.pylearn.ninja']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
