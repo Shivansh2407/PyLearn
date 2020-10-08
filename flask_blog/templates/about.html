@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static', filename='img/about-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!--  
+            Loadind Data from Json But it Can't Work for HTML Syntax
+          <p>{{params['about_text']}}</p> 
+        -->
+        <p>Hi there 👋 I am Harikrushn.<br>
+<a href="https://www.linkedin.com/in/hari-kanani-ab777b1a9/"></a>
+<a href="https://www.twitter.com/Harikrushn9"><i class="fab fa-twitter-square" style="font-size:40px;color:#00acee"></i></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/kanani_025"><i class="fab fa-instagram" style="font-size:40px;color: #C13584"></i></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.facebook.com/harikrishan.kanani/"><i class="fab fa-facebook" style="font-size:40px;color:#3b5998"></i></a>&nbsp;&nbsp;&nbsp;
+<a heref="mailto:khambhadiyadharmik@gmail.com"><i class="far fa-envelope cp" style="font-size:40px;color:#D44638"></i></a><br><br>
+
+
+😄 My name is <a href="https://www.github.com/harikanani/" style="color:#17a2b8">Harikrushn.</a><br>
+🔭 I’m currently working on Personal project(<a href="https://github.com/harikanani/AutomateInstaPyBot" style="color:#17a2b8">AutomateInstaPyBot App </a>)<br>
+🌱 I’m currently learning Flutter.<br>
+👯 I’m looking to collaborate on Instagram<br>
+💬 Ask me about java and flutter.<br>
+📫 How to reach me: Instagram - <a href="https://www.instagram.com/kanani_025" style="color:#17a2b8">@kanani_025</a> , Twitter - <a href="https://www.twitter.com/Harikrushn9" style="color:#17a2b8">@Harikrushn9</a></p>
+      </div>
+    </div>
+  </div>
+
+  {% endblock body %}
